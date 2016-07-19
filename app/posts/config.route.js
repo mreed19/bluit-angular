@@ -1,6 +1,4 @@
-(function() {
-  'use strict';
-
+{
   angular
     .module('bluit.posts')
     .config(configFunction);
@@ -13,4 +11,4 @@
         template: '<h2>posts</h2>'
       });
   }
-})();
+}
