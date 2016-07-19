@@ -8,7 +8,7 @@
     $stateProvider
       .state('posts', {
         url: '/posts',
-        template: '<h2>posts</h2>'
+        template: '<posts></posts>'
       });
   }
 }
