@@ -1,6 +1,7 @@
 {
   angular.module('bluit', [
     'ui.router',
+    'ngResource',
     'bluit.posts'
   ])
   .config(configFunction);
