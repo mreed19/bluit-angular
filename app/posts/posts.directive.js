@@ -32,6 +32,7 @@
                 submitted <span am-time-ago="post.updated_at"></span>
               </div>
             </li>
+          </ul>
 
           `
         };

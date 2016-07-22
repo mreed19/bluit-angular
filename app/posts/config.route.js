@@ -9,6 +9,11 @@
       .state('posts', {
         url: '/posts',
         template: '<posts></posts>'
+      })
+
+      .state('newPost', {
+        url: '/posts/new',
+        template: '<posts-form></posts-form>'
       });
   }
 }
