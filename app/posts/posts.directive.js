@@ -26,10 +26,10 @@
           <ul class="posts">
             <li ng-repeat="post in vm.posts | orderBy: '-updated_at' track by $index">
               <div class="title">
-                post.title
+                {{post.title}}
               </div>
               <div class="tagline" title="{{ post.created_at}}">
-                post.created_at
+                submitted {{post.created_at}}
               </div>
             </li>
 
