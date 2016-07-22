@@ -26,7 +26,8 @@
           <ul class="posts">
             <li ng-repeat="post in vm.posts | orderBy: '-updated_at' track by $index">
               <div class="title">
-                {{post.title}}
+                <a ng-hide="post.link_url" ui-sref="show-post({postId: post._id})">{{post.title}}</a>
+                <a ng-show="post.link_url" href="{{post.link_url}}">{{post.title}}</a>
               </div>
               <div class="tagline" title="{{ post.updated_at}}">
                 submitted <span am-time-ago="post.updated_at"></span>

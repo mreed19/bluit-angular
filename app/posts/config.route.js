@@ -11,9 +11,14 @@
         template: '<posts></posts>'
       })
 
-      .state('newPost', {
+      .state('new-post', {
         url: '/posts/new',
         template: '<posts-form></posts-form>'
+      })
+
+      .state('show-post', {
+        url: '/posts/:postId',
+        template: '<post></post>'
       });
   }
 }
