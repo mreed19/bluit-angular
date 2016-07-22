@@ -2,11 +2,30 @@
   angular
     .module('bluit.posts')
     .directive('postsForm', [
-      () => {
+
+      '$state',
+      'Post',
+      ($state, Post) => {
+        class PostsFormController {
+          constructor() {
+            var vm = this;
+            vm.post = new Post();
+          }
+          submit() {
+            var vm = this;
+            vm.post
+              .$save()
+              .then(() => $state.go('posts'));
+          }
+        }
         return {
+          scope: {},
+          controller: PostsFormController,
+          controllerAs: 'vm',
+          bindToController: true,
           template: `
 
-          <form ng-submit="vm.save()">
+          <form ng-submit="vm.submit()">
             <p>
               <label for="post_title">Title</label>
               <input
