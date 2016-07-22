@@ -28,8 +28,8 @@
               <div class="title">
                 {{post.title}}
               </div>
-              <div class="tagline" title="{{ post.created_at}}">
-                submitted {{post.created_at}}
+              <div class="tagline" title="{{ post.updated_at}}">
+                submitted <span am-time-ago="post.updated_at"></span>
               </div>
             </li>
 

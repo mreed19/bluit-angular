@@ -2,6 +2,7 @@
   angular.module('bluit', [
     'ui.router',
     'ngResource',
+    'angularMoment',
     'bluit.posts'
   ])
   .config(configFunction);

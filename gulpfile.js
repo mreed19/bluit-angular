@@ -35,7 +35,9 @@
     'bower_components/textAngular/dist/textAngular-rangy.min.js',
     'bower_components/textAngular/dist/textAngular-sanitize.min.js',
     'bower_components/textAngular/dist/textAngular.min.js',
-    'bower_components/angular-resource/angular-resource.min.js'
+    'bower_components/angular-resource/angular-resource.min.js',
+    'bower_components/moment/moment.js',
+    'bower_components/angular-moment/angular-moment.js'
   ];
 
   var cssFiles = [

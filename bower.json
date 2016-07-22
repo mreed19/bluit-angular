@@ -13,9 +13,10 @@
     "font-awesome": "^4.6.3",
     "textAngular": "^1.5.1",
     "angular-flash-alert": "^2.3.0",
-    "angular-resource": "^1.5.7"
+    "angular-resource": "^1.5.7",
+    "angular-moment": "^0.10.3"
   },
   "resolutions": {
-    "angular": "1.5.6"
+    "angular": "~1.5.6"
   }
 }
